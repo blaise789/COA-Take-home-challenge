@@ -1,0 +1,26 @@
+# Interactive Photo Gallery
+
+## Overview
+This project is an interactive photo gallery built using HTML and CSS. The gallery is designed to be responsive and match the provided Figma designs pixel-perfectly. Additionally, two coding challenges are included to demonstrate logical thinking and coding aptitude.
+
+## Table of Contents
+
+- [Implementation Details](#implementation-details)
+  - [Interactive Photo Gallery](#interactive-photo-gallery)
+  - [Coding Challenge 1: Array Manipulation](#coding-challenge-1-array-manipulation)
+  - [Coding Challenge 2: String Transformation](#coding-challenge-2-string-transformation)
+- [Testing](#testing)
+- [Submission](#submission)
+- [Contact](#contact)
+
+## Requirements
+1. **Responsive Design**: The interactive photo gallery should adapt seamlessly to different screen sizes and devices.
+2. **Figma Design Accuracy**: Match the provided Figma designs pixel-perfectly, including layout, spacing, typography, and visual styles.
+3. **Hover Interaction**: Implement the hover interaction as shown in the Figma prototype, displaying additional details when a user hovers over a photo.
+4. **Cross-browser Compatibility**: Ensure consistent performance across modern web browsers, such as Chrome, Firefox, Safari, and Edge.
+5. **Code Quality**: Write clean, readable, and well-structured code, following best practices and coding conventions for HTML, CSS, and JavaScript.
+
+## Setup Instructions
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/blaise789/interactive-photo-gallery.git
