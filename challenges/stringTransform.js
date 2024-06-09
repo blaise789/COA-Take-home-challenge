@@ -1,22 +1,25 @@
-function transformString(word) {
-    const length = word.length;
+function transformString(inputWord) {
+    const wordLength = inputWord.length;
 
-    if (length % 15 === 0) {
-        // Reverse the string and then replace each character with its ASCII code
-        return word.split('').reverse().map(char => char.charCodeAt(0)).join(' ');
-    } else if (length % 5 === 0) {
+    if (wordLength % 15 === 0) {
+        // Reverse the string and replace each character with its ASCII code
+        return inputWord.split('').reverse().map(char => char.charCodeAt(0)).join(' ');
+    } else if (wordLength % 5 === 0) {
         // Replace each character with its ASCII code
-        return word.split('').map(char => char.charCodeAt(0)).join(' ');
-    } else if (length % 3 === 0) {
+        return inputWord.split('').map(char => char.charCodeAt(0)).join(' ');
+    } else if (wordLength % 3 === 0) {
         // Reverse the string
-        return word.split('').reverse().join('');
+        return inputWord.split('').reverse().join('');
     } else {
         // Return the string as is
-        return word;
+        return inputWord;
     }
 }
 
-// Test cases
-console.log(transformString("Hamburger")); // Output: "regrubmaH"
-console.log(transformString("Pizza")); // Output: "80 105 122 122 97"
-console.log(transformString("Chocolate Chip Cookie")); // Output: "eikooCpihCetalocohC"
+// Function usage and Testing of its results
+const testWord4 = "bigman";  //Output:namgib
+console.log(transformString(testWord4)); // Output: "hcniw dnaS"
+
+const testWord5 = "Salad";
+console.log(transformString(testWord5)); // Output: "83 97 108 97 100"
+
