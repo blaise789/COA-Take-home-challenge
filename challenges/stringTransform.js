@@ -17,9 +17,7 @@ function transformString(inputWord) {
 }
 
 // Function usage and Testing of its results
-const testWord4 = "bigman";  //Output:namgib
-console.log(transformString(testWord4)); // Output: "hcniw dnaS"
-
-const testWord5 = "Salad";
-console.log(transformString(testWord5)); // Output: "83 97 108 97 100"
-
+// Test cases
+console.log(transformString("Hamburger")); // Output: "regrubmaH"
+console.log(transformString("Pizza")); // Output: "80 105 122 122 97"
+console.log(transformString("Chocolate Chip Cookie")); // Output: "eikooCpihCetalocohC"

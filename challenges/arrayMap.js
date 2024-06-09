@@ -2,11 +2,11 @@ function hasMatchingSubarraySum(array, target) {
     let startIndex = 0;
     let currentSum = 0;
     
-    for (let lastIndex = 0; lastIndex < array.length; lastIndex++) {
-        currentSum += array[lastIndex];
+    for (let endIndex = 0; endIndex < array.length; endIndex++) {
+        currentSum += array[endIndex];
         
         // Adjust the window if the sum exceeds the target
-        while (currentSum > target && startIndex <= lastIndex) {
+        while (currentSum > target && startIndex <= endIndex) {
             currentSum -= array[startIndex];
             startIndex++;
         }
@@ -20,8 +20,8 @@ function hasMatchingSubarraySum(array, target) {
     return false;
 }
 
-//Test cases
-const testArray1 = [1, 2, 5, 2, 10, ];
+//Function Test Cases
+const testArray1 = [4, 2, 7, 1, 9, 5];
 const targetSum1 = 17;
 console.log(hasMatchingSubarraySum(testArray1, targetSum1)); // Output: true
 
